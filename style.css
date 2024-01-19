@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+:root {
+    /*Font-Family*/
+    --font-primary: 'Oswald', sans-serif;
+    --font-secondary: 'Satisfy', monospace;
+    /*Colors*/
+    --color-primary: #333;
+    --color-scondary: #fff;
+    --color-blk: rgba(131, 131, 131, 0.2);
+    --color-green: rgba(33, 209, 0, 0.57);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 14vh;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-scondary);
+    font-family: var(--font-primary);
+}
+
+main {
+    margin-top: 8vh;
+}
+
+section {
+    margin-top: 1rem;
+}
+
+.nabvar {
+    height: 8vh;
+}
+
+.img-fluid {
+    margin-top: 1rem;
+    object-fit: contain;
+    filter: hue-rotate(20deg);
+
+
+}
+
+
+
+
+
+hr {
+    width: 45%;
+}
+
+.contenedor_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#servicios-plomeria h4 {
+    color: slateblue;
+}
+
+#servicios-gasista h4 {
+    color: slateblue;
+}
+
+.separador_1 {
+    text-align: center;
+    background-color: var(--color-blk);
+    padding: 2rem;
+}
+
+.separador_1 img {
+    width: 40%;
+}
+
+/*Consultas*/
+
+#whatsapp img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+
+#whatsapp {
+    position: fixed;
+    bottom: 3vh;
+    right: 1vw;
+}
+
+/*Medios de pago*/
+
+
+
+#medios-pago img {
+    max-width: 50%;
+    height: auto;
+}
+
+
+
+/*Nosotros*/
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 400px;
+    background: url('assets/separador-2.png') no-repeat center center / contain;
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    height: 150px;
+    gap: .5rem;
+    background-color: var(--color-blk);
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--color-scondary);
+    text-decoration: none;
+}
+
+footer a i {
+    font-size: 2rem;
+    margin: 1rem;
+}
