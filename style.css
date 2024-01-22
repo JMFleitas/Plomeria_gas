@@ -7,45 +7,88 @@
     --font-secondary: 'Satisfy', monospace;
     /*Colors*/
     --color-primary: #333;
-    --color-scondary: #fff;
+    --one-color: #fff;
     --color-blk: rgba(131, 131, 131, 0.2);
-    --color-green: rgba(33, 209, 0, 0.57);
+    --second-color: rgb(106, 90, 205);
+    --second-alpha-color: rgba(106, 90, 205, 0.75);
 }
+
+/**reset styles**/
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 14vh;
+    scroll-padding-top: 12vh;
 }
 
 body {
-    background-color: var(--color-primary);
-    color: var(--color-scondary);
+    background-image: linear-gradient(to bottom, #434343 0%, #111 20%) !important;
+    color: var(--one-color);
     font-family: var(--font-primary);
 }
 
-main {
-    margin-top: 8vh;
-}
 
 section {
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
+
+
+/***Header*/
 .nabvar {
     height: 8vh;
 }
 
-.img-fluid {
-    margin-top: 1rem;
-    object-fit: contain;
-    filter: hue-rotate(20deg);
-
+.navbar-dark .navbar-toggler {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28 106, 90, 205' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all .3s ease-out;
 
 }
 
 
+.navbar-dark .navbar-toggler:hover {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28106, 90, 205, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    opacity: 0.75;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: none;
+    /* o outline: 0; */
+    box-shadow: 0 0 0;
+}
 
 
+.bg-grad {
+
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+
+}
+
+.nav-item {
+    transition: all .3s ease-out;
+}
+
+.nav-item:hover {
+    background-color: var(--second-alpha-color);
+}
+
+.nav-link {
+    color: var(--second-color);
+    margin-left: 0.5rem;
+}
+
+/**Imagen Presentacion*/
+
+.presentacion .img-fluid {
+    object-fit: contain;
+    filter: hue-rotate(20deg);
+}
 
 hr {
     width: 45%;
@@ -59,12 +102,13 @@ hr {
 }
 
 
+
 #servicios-plomeria h4 {
-    color: slateblue;
+    color: var(--second-color);
 }
 
 #servicios-gasista h4 {
-    color: slateblue;
+    color: var(--second-color);
 }
 
 .separador_1 {
@@ -97,8 +141,8 @@ hr {
 
 
 #medios-pago img {
-    max-width: 50%;
-    height: auto;
+    max-width: 30%;
+    height: 50%;
 }
 
 
@@ -106,10 +150,6 @@ hr {
 /*Nosotros*/
 
 #contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 2rem;
     height: 400px;
     background: url('assets/separador-2.png') no-repeat center center / contain;
@@ -127,9 +167,46 @@ footer {
 footer a {
     color: var(--color-scondary);
     text-decoration: none;
+    margin-left: 1rem;
+    transition: all .3s ease-out;
+
 }
 
-footer a i {
-    font-size: 2rem;
-    margin: 1rem;
+footer a:hover {
+    color: var(--second-alpha-color);
+
 }
+
+
+
+/*  X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    .nav-link {
+        color: var(--one-color);
+    }
+
+    .nav-link:hover {
+        color: var(--second-alpha-color);
+
+    }
+
+    .nav-item:hover {
+        background-color: transparent;
+    }
+}
+
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
