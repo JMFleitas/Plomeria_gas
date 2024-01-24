@@ -7,7 +7,7 @@ export default function collapseMenu(id) {
     })
     d.addEventListener('click', e => {
 
-        if (!e.target.matches(".navbar a")) return false
+        if (!e.target.matches(".navbar .nav-link || .navbar .dropdown-item")) return false
 
         bsCollapse.hide();
 

@@ -33,20 +33,13 @@ section {
     margin-top: .5rem;
 }
 
+/*** Style Bootstrap ***/
+.btn {
+    color: var(--one-color);
+}
 
-
-/***Header*/
-
-
-.bg-grad {
-
-    background:
-        radial-gradient(black 15%, transparent 16%) 0 0,
-        radial-gradient(black 15%, transparent 16%) 8px 8px,
-        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
-        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
-    background-color: #282828;
-    background-size: 16px 16px;
+.btn:hover {
+    background-color: var(--second-alpha-color);
 
 }
 
@@ -58,9 +51,6 @@ section {
     color: var(--second-alpha-color);
 }
 
-.nabvar {
-    height: 9vh;
-}
 
 .navbar-dark .navbar-toggler {
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28 106, 90, 205' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -74,15 +64,6 @@ section {
     opacity: 0.75;
 }
 
-.navbar-toggler:focus {
-    text-decoration: none;
-    outline: none;
-    /* o outline: 0; */
-    box-shadow: 0 0 0;
-}
-
-
-
 .nav-item {
     transition: all .3s ease-out;
 }
@@ -91,13 +72,44 @@ section {
     background-color: var(--second-alpha-color);
 }
 
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: none;
+    /* o outline: 0; */
+    box-shadow: 0 0 0;
+}
+
+
 .nav-link {
     color: var(--second-color);
     margin-left: 0.5rem;
 }
 
+/*** my styles***/
+
+.contenedor_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/***Header*/
+
+.bg-grad {
+
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+
+}
 
 /**Nosotros*/
+
 .presentacion {
     background: url('assets/fondo1.png') no-repeat center center / cover;
     flex-direction: column;
@@ -114,14 +126,6 @@ section {
 hr {
     width: 45%;
 }
-
-.contenedor_flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 
 
 #servicios-plomeria h4 {
@@ -167,7 +171,6 @@ hr {
 }
 
 
-
 /*Nosotros*/
 
 #contacto {
@@ -187,18 +190,11 @@ hr {
     background-color: var(--second-alpha-color);
 }
 
-.btn {
-    color: var(--one-color);
-}
 
-.btn:hover {
-    background-color: var(--second-alpha-color);
-
-}
 
 /*Footer*/
 footer {
-    height: 150px;
+    height: 100px;
     gap: .5rem;
     background-color: var(--color-blk);
     margin-top: 2rem;
