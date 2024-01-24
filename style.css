@@ -19,7 +19,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 12vh;
+    scroll-padding-top: 5rem;
 }
 
 body {
@@ -59,7 +59,7 @@ section {
 }
 
 .nabvar {
-    height: 8vh;
+    height: 9vh;
 }
 
 .navbar-dark .navbar-toggler {
@@ -175,6 +175,8 @@ hr {
     height: 400px;
     background: url('assets/separador-2.png') no-repeat center center / contain;
     text-align: center;
+    scroll-padding-top: 8rem;
+
 }
 
 .bg-second-color {
