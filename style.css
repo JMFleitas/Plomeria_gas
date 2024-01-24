@@ -26,12 +26,12 @@ body {
     background-image: linear-gradient(to bottom, #434343 0%, #111 20%) !important;
     color: var(--one-color);
     font-family: var(--font-primary);
+    scroll-padding-top: 150px
 }
 
 
 section {
     margin-top: .5rem;
-    scroll-padding-top: 100px
 }
 
 /*** Style Bootstrap ***/
