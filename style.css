@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 :root {
     /*Font-Family*/
     --font-primary: 'Oswald', sans-serif;
     --font-secondary: 'Satisfy', monospace;
+    --third-font: 'Dancing Script', sans-serif;
     /*Colors*/
     --color-primary: #333;
     --one-color: #fff;
@@ -34,6 +36,28 @@ section {
 
 
 /***Header*/
+
+
+.bg-grad {
+
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+
+}
+
+.dropdown-item {
+    transition: all 0.5s ease-out;
+}
+
+.dropdown-item:hover {
+    color: var(--second-alpha-color);
+}
+
 .nabvar {
     height: 8vh;
 }
@@ -58,17 +82,6 @@ section {
 }
 
 
-.bg-grad {
-
-    background:
-        radial-gradient(black 15%, transparent 16%) 0 0,
-        radial-gradient(black 15%, transparent 16%) 8px 8px,
-        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
-        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
-    background-color: #282828;
-    background-size: 16px 16px;
-
-}
 
 .nav-item {
     transition: all .3s ease-out;
@@ -83,11 +96,19 @@ section {
     margin-left: 0.5rem;
 }
 
-/**Imagen Presentacion*/
 
-.presentacion .img-fluid {
-    object-fit: contain;
-    filter: hue-rotate(20deg);
+/**Nosotros*/
+.presentacion {
+    background: url('assets/fondo1.png') no-repeat center center / cover;
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.presentacion h1 {
+    font-family: var(--third-font);
 }
 
 hr {
@@ -154,6 +175,23 @@ hr {
     height: 400px;
     background: url('assets/separador-2.png') no-repeat center center / contain;
     text-align: center;
+}
+
+.bg-second-color {
+    background-color: var(--second-color);
+}
+
+.bg-second-alpha-color {
+    background-color: var(--second-alpha-color);
+}
+
+.btn {
+    color: var(--one-color);
+}
+
+.btn:hover {
+    background-color: var(--second-alpha-color);
+
 }
 
 /*Footer*/
