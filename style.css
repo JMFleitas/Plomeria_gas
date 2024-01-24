@@ -19,6 +19,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: calc(50px + 2rem);
 
 }
 
@@ -26,7 +27,6 @@ body {
     background-image: linear-gradient(to bottom, #434343 0%, #111 20%) !important;
     color: var(--one-color);
     font-family: var(--font-primary);
-    scroll-padding-top: 150px
 }
 
 
@@ -52,6 +52,9 @@ section {
     color: var(--second-alpha-color);
 }
 
+.navbar {
+    min-height: 2rem;
+}
 
 .navbar-dark .navbar-toggler {
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28 106, 90, 205' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
