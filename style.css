@@ -19,12 +19,8 @@
 
 html {
     scroll-behavior: smooth;
-<<<<<<< HEAD
-    scroll-padding-top: auto;
+    scroll-padding-top: 11vh;
 
-=======
-    scroll-padding-top: 8vh;
->>>>>>> f48f3ff (Merge main dentro develop)
 }
 
 body {
@@ -102,7 +98,7 @@ section {
 /***Header*/
 
 .logo{
-    height: 80px;
+    height: 70px;
     width: auto;
 }
 
@@ -235,6 +231,12 @@ footer a:hover {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+    
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 15vh;
+
+}
 
     .nav-link {
         color: var(--one-color);
