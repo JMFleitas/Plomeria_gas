@@ -11,8 +11,8 @@
     --color-primary: #333;
     --one-color: #fff;
     --color-blk: rgba(131, 131, 131, 0.2);
-    --second-color: rgb(106, 90, 205);
-    --second-alpha-color: rgba(106, 90, 205, 0.75);
+    --second-color: rgb(38, 139, 240);
+    --second-alpha-color: rgb(38, 139, 240,0.5);;
 }
 
 /**reset styles**/
@@ -96,6 +96,11 @@ section {
 }
 
 /***Header*/
+
+.logo{
+    height: 80px;
+    width: auto;
+}
 
 .bg-grad {
 
