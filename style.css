@@ -19,8 +19,12 @@
 
 html {
     scroll-behavior: smooth;
+<<<<<<< HEAD
     scroll-padding-top: auto;
 
+=======
+    scroll-padding-top: 8vh;
+>>>>>>> f48f3ff (Merge main dentro develop)
 }
 
 body {
